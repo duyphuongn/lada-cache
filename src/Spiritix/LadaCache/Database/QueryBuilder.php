@@ -59,10 +59,10 @@ class QueryBuilder extends Builder
      */
     public function __construct(
         ConnectionInterface $connection,
-        Grammar $grammar = null,
-        Processor $processor = null,
+        ?Grammar $grammar = null,
+        ?Processor $processor = null,
         QueryHandler $handler,
-        Model $model = null
+        ?Model $model = null
     ) {
         parent::__construct($connection, $grammar, $processor);
 
